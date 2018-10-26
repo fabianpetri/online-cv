@@ -2,9 +2,8 @@
 layout: compress
 ---
 <!DOCTYPE html>
-<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->  
-<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->  
-<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->  
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}"> 
+
 {% include head.html %}
 
 <body>
@@ -12,7 +11,19 @@ layout: compress
     {% include sidebar.html %}
 
     <div class="main-wrapper">
-        {{ content }}
+      {% include career-profile.html %}
+
+      {% unless site.data.data[page.lang].sidebar.education %}
+        {% include education.html %}
+      {% endunless %}
+      
+      {% include experiences.html %}
+      
+      {% include projects.html %}
+      
+      {% include publications.html %}
+      
+      {% include skills.html %}
     </div>
   </div>
 
