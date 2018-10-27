@@ -13,7 +13,7 @@ layout: compress
     <div class="main-wrapper">
       {% include career-profile.html %}
 
-      {% unless site.data.data[page.lang].sidebar.education %}
+      {% unless site.data[page.lang].sidebar.education %}
         {% include education.html %}
       {% endunless %}
       
