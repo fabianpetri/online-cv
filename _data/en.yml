@@ -4,13 +4,13 @@
 
 
 
-titel: Resume / CV Fabian Petri en
+titel: Resume / CV Fabian Petri
 sidebar:
     education: True # set to False if you want education in main section instead of in sidebar
 
     # Profile information
     name: Fabian Petri ed
-    tagline: SPS Programmierer
+    tagline: PLC software engineer
     avatar: profile.png  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
 
     # Sidebar links
@@ -27,16 +27,16 @@ sidebar:
     codewars:
 
     languages:
-        title: Sprachen
+        title: LANGUAGES
         summary:
-          - idiom: Deutsch
-            level: Muttersprache
+          - idiom: German
+            level: Native
 
-          - idiom: Englich
-            level: Gute Kentnisse
+          - idiom: English
+            level: Professional
 
     interests:
-        title: Interessen
+        title: Interests
         summary:
           - item: IoT
             link:
@@ -48,7 +48,7 @@ sidebar:
             link:
 
 career-profile:
-    title: Karriere Profil
+    title: CAREER PROFILE
     summary: |
       Summarise your career here lorem ipsum dolor sit amet, consectetuer
       adipiscing elit. You can [download this free resume/CV template here]().
@@ -59,7 +59,7 @@ career-profile:
       Second paragraph if required.
 
 education:
-      title: Ausbildung  
+      title: EDUCATION  
       summary:
         - degree: MSc in Computer Science
           university: University of London
@@ -88,7 +88,7 @@ education:
               - Bullet point       
 
 experiences:
-    title: Beruflicher Werdegang  
+    title: EXPERIENCES 
     summary:
       - role: Lead Developer
         time: 2015 - Present
@@ -136,7 +136,7 @@ experiences:
           - name: PAScal Safety Calculator
 
 projects:
-    title: Projekte
+    title: PROJECTS
     intro: >
       You can list your side projects or open source libraries in this
       section. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -164,7 +164,7 @@ projects:
         tagline: "A responsive Bootstrap one page theme designed to help app developers promote their mobile apps"
 
 publications:
-    title: Puplikationen
+    title: PUBLICATIONS
     intro: |
       You can list your publications in this section. Lorem ipsum dolor sit
       amet, consectetur adipiscing elit. Vestibulum et ligula in nunc
@@ -184,7 +184,7 @@ publications:
         conference: "Comm. ACM 4 (1961), 51–55"
 
 skills:
-    title: Besondere Kenntnisse
+    title: SKILLS & PROFICIENCY
 
     toolset:
       - name: Siemens STEP 7

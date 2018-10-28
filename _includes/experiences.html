@@ -30,9 +30,13 @@
     {% endif %}
 
     {% if experience.technology %}
+    <ul class="list-inline">
       {% for technology in experience.technology %}
-        <span class="label label-default">{{ technology.name }}</span>
+      <li class="list-inline-item">
+        <span class="badge badge-primary badge-pill">{{ technology.name }}</span>
+      </li>
       {% endfor %}
+    </ul>
     {% endif %}
   </div><!--//item-->
   <hr />
