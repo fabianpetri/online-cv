@@ -211,7 +211,7 @@ skills:
         level: 60%
 
 
- otherSkills:
+ otherskills:
     title: Weitere Kenntnisse
     toolset:
       - name: Siemens STEP 7
