@@ -64,22 +64,19 @@ education:
         - degree: Staatlich geprüfter Techniker (Automatisierungstechnik)
           university: Gewerbliche Schulen Dillenburg
           time: 2009 - 2013
-          details: |
-              - Bullet point
-              - Bullet point
 
         - degree: Ausbildung Mechatroniker
-          university: LINDE+WIEMANN GmbH KG , Dillenburg
+          university: LINDE+WIEMANN GmbH KG Dillenburg
           time: 2005 - 2009
-          details: |
-            Describe your study here lorem ipsum dolor sit amet, consectetuer
-            adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
-            sociis natoque penatibus et magnis dis parturient montes, nascetur
-            ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
-            pretium quis, sem.
-
-              - Bullet point
-              - Bullet point       
+#          details: |
+#            Describe your study here lorem ipsum dolor sit amet, consectetuer
+#            adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
+#            sociis natoque penatibus et magnis dis parturient montes, nascetur
+#            ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
+#            pretium quis, sem.
+#
+#              - Bullet point
+#              - Bullet point       
 
 experiences:
     title: Beruflicher Werdegang  
