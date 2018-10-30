@@ -186,10 +186,12 @@ p {
         margin-top: 0;
         margin-bottom: 0;
         font-weight: 500;
+
+        li {
+            line-height: 1.5;  
+        }
     }
 
-    .job-skills{
-        line-height: 1.5;
     }    
     .time {
         position: absolute;
