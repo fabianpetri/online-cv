@@ -40,11 +40,10 @@
     {% endif %}
   </div><!--//item-->
   
-  {% if forloop.last %}
+  {%  {% unless loop.last %}
   <hr />
-  {% endif %}
-  
-  {% endfor %}
+  {% endunless %}
+
 
 </section><!--//section-->
 {% endif %}
