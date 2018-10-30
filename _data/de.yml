@@ -211,17 +211,13 @@ skills:
         level: 60%
 
 
- otherskills:
+otherskills:
     title: Weitere Kenntnisse
     toolset:
       - name: Siemens STEP 7
-
       - name: Siemens TIA
-
       - name: Schneider PacDrive 3
-
       - name: Codesys
-
       - name: Codesys    
 
 
