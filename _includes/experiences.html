@@ -39,7 +39,10 @@
     </ul>
     {% endif %}
   </div><!--//item-->
-  <hr />
+  
+    {% if not loop.last %}
+     <hr />
+    {% endif %}
   {% endfor %}
 
 </section><!--//section-->
