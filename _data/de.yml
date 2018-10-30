@@ -176,7 +176,6 @@ publications:
 
 skills:
     title: Besondere Kenntnisse
-
     toolset:
       - name: Siemens STEP 7
         level: 95%
@@ -210,6 +209,21 @@ skills:
 
       - name: Sketch & Photoshop
         level: 60%
+
+
+ otherSkills:
+    title: Weitere Kenntnisse
+    toolset:
+      - name: Siemens STEP 7
+
+      - name: Siemens TIA
+
+      - name: Schneider PacDrive 3
+
+      - name: Codesys
+
+      - name: Codesys    
+
 
 footer: >
     Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>

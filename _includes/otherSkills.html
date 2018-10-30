@@ -1,0 +1,23 @@
+{% assign skills = site.data[page.lang].otherSkills %}
+{% if skills %}
+<section class="skills-section section">
+
+  <h2 class="section-title">
+    <span class="fa-stack fa-xs">
+      <i class="fas fa-circle fa-stack-2x"></i>
+      <i class="fas fa-wrench fa-stack-1x fa-inverse"></i>
+    </span>
+    {{ skills.title }}
+  </h2>
+
+  <ul class="list-inline">
+    {% for skill in skills.toolset %}
+    <li class="list-inline-item">
+      <span class="badge badge-light">{{  skill.name }}</span>
+    </li>
+    {% endfor %}
+  </ul>
+
+
+</section><!--//skills-section-->
+{% endif %}
