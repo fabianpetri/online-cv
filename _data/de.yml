@@ -64,6 +64,7 @@ education:
         - degree: Staatlich geprüfter Techniker (Automatisierungstechnik)
           university: Gewerbliche Schulen Dillenburg
           time: 2009 - 2013
+<<<<<<< HEAD
           details: |
               - Bullet point
               - Bullet point
@@ -80,6 +81,21 @@ education:
 
               - Bullet point
               - Bullet point       
+=======
+
+        - degree: Ausbildung Mechatroniker
+          university: LINDE+WIEMANN GmbH KG Dillenburg
+          time: 2005 - 2009
+#          details: |
+#            Describe your study here lorem ipsum dolor sit amet, consectetuer
+#            adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
+#            sociis natoque penatibus et magnis dis parturient montes, nascetur
+#            ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
+#            pretium quis, sem.
+#
+#              - Bullet point
+#              - Bullet point       
+>>>>>>> 85ce63f1c19f0177dc5a93433c205fd52810e313
 
 experiences:
     title: Beruflicher Werdegang  
@@ -107,7 +123,11 @@ experiences:
           - name: Test1
           - name: test 2
 
+<<<<<<< HEAD
       - role: Senior Software Engineer
+=======
+      - role: Mechatroniker / SPS Programmierer 
+>>>>>>> 85ce63f1c19f0177dc5a93433c205fd52810e313
         time: 2014 - 2015
         company: Linde + Wiemann GmbH, Deutschalnd
         details: |
@@ -117,9 +137,12 @@ experiences:
           nascetur ridiculus mus. Donec quam felis, ultricies nec,
           pellentesque eu, pretium quis, sem.
 
+<<<<<<< HEAD
             - Bullet point
             - Bullet point
 
+=======
+>>>>>>> 85ce63f1c19f0177dc5a93433c205fd52810e313
         technology:
           - name: Robotic
           - name: Siemens S7
@@ -149,6 +172,7 @@ projects:
         link: "#"
         tagline: "A responsive website template designed to help startups promote their products or services and to attract users &amp; investors"
 
+<<<<<<< HEAD
       - title: Atom
         link: "#"
         tagline: "A comprehensive website template solution for startups/developers to market their mobile apps."
@@ -180,6 +204,11 @@ publications:
 skills:
     title: Besondere Kenntnisse
 
+=======
+
+skills:
+    title: Besondere Kenntnisse
+>>>>>>> 85ce63f1c19f0177dc5a93433c205fd52810e313
     toolset:
       - name: Siemens STEP 7
         level: 95%
@@ -214,5 +243,19 @@ skills:
       - name: Sketch & Photoshop
         level: 60%
 
+<<<<<<< HEAD
+=======
+
+otherskills:
+    title: Weitere Kenntnisse
+    toolset:
+      - name: Siemens STEP 7
+      - name: Siemens TIA
+      - name: Schneider PacDrive 3
+      - name: Codesys
+      - name: Codesys    
+
+
+>>>>>>> 85ce63f1c19f0177dc5a93433c205fd52810e313
 footer: >
     Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>

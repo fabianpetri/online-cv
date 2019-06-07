@@ -30,7 +30,11 @@
     {% endif %}
 
     {% if experience.technology %}
+<<<<<<< HEAD
     <ul class="list-inline">
+=======
+     <ul class="list-inline">
+>>>>>>> 85ce63f1c19f0177dc5a93433c205fd52810e313
       {% for technology in experience.technology %}
       <li class="list-inline-item">
         <span class="badge badge-primary badge-pill">{{ technology.name }}</span>
@@ -39,7 +43,16 @@
     </ul>
     {% endif %}
   </div><!--//item-->
+<<<<<<< HEAD
   <hr />
+=======
+  
+  {% if forloop.last == false  %}
+  <hr />
+  {% endif %}
+
+
+>>>>>>> 85ce63f1c19f0177dc5a93433c205fd52810e313
   {% endfor %}
 
 </section><!--//section-->
