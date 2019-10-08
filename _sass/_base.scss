@@ -193,6 +193,7 @@ p {
         font-size: 16px;
         margin-top: 0;
         margin-bottom: 0;
+        padding-right: 100px;
         font-weight: 500;
     }
    
@@ -203,8 +204,14 @@ p {
         color: $text-grey;
     }
     .company, .university {
+        margin-bottom: 5px;
+        color: $text-grey;
+    }
+
+    .business, .university  {
         margin-bottom: 10px;
         color: $text-grey;
+        font-size: 12px;
     }
 
     .project-title {
