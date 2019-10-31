@@ -83,7 +83,7 @@ education:
 experiences:
     title: Beruflicher Werdegang  
     summary:
-      - role: Verantwortlicher Softwareentwickler im Bereich Anlagen- und Systemtechnik
+      - role: Lead software engineer for machines and system technology
         time: 2014 - heute
         company: Loesch Verpackungstechnik GmbH, Altendorf
         business: Verpackungsanlagen / Sondermaschinenbau
@@ -102,7 +102,7 @@ experiences:
           - name: Anlagen und Systeme
           - name: Projektleitung
 
-      - role: Teilprojektleiter / Elektrokonstrukteur / Softwareentwickler
+      - role: Sub-project manager | Electrical engineering department
         time: 2013 - 2014
         company: Loesch Verpackungstechnik GmbH, Altendorf
         business: Verpackungsanlagen / Sondermaschinenbau
@@ -120,7 +120,7 @@ experiences:
           - name: Codesys
           - name: Projektleitung
 
-      - role: Mechatroniker / Elektroplaner / Programmierer 
+      - role: Mechatronic specialists for machines and system technology  
         time: 2009 - 2013
         company: Linde + Wiemann GmbH, Dillenburg
         business: Automobilindustrie / Zulieferer
