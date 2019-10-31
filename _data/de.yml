@@ -1,233 +1,465 @@
 #
+
 # Be aware that even a small syntax error here can lead to failures in output.
+
 #
+
+
+
+
 
 
 
 titel: Resume / CV Fabian Petri
+
 sidebar:
+
     education: True # set to False if you want education in main section instead of in sidebar
 
+
+
     # Profile information
+
     name: Fabian Petri
+
     tagline: Softwareentwickler / Automatisierungstechniker
+
     avatar: profile.png  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
 
+
+
     # Sidebar links
+
     email: info@fabianpetri.com
-    phone: +49 151 222 15 000 0
+
+    phone: +49 151 222 15 000
+
     website: fabianpetri.com #do not add http://
+
     xing: fabian_petri
+
     linkedin: fabian-petri-962697173
+
     github: fabianpetri
+
     gitlab:
+
     bitbucket:
+
     twitter:
+
     stack-overflow: # Number/Username, e.g. 123456/alandoe
+
     codewars:
 
+
+
     languages:
+
         title: Sprachen
+
         summary:
+
           - idiom: Deutsch
+
             level: Muttersprache
 
+
+
           - idiom: Englich
+
             level: Gute Kentnisse
 
+
+
     interests:
+
         title: Interessen
+
         summary:
-          - item: Fachliteratur
-            link:
+
           - item: IoT
+
             link:
+
+
 
           - item: Home Automation
+
             link:
+
+
 
           - item: Sport
+
             link:
 
+
+
 career-profile:
+
     title: Karriere Profil
+
     summary: |
+
       Ich habe über 10 Jahre Erfahrung in der Softwarentwicklung und Automatisierungstechnik im Anlagen- u. Maschinenbau, hauptsächlich in den Bereichen Automotiv- und Verpackungsanlagen. In den letzten 4 Jahren habe ich die Weiterentwicklung des System- und Anlagemarktes  bei Loeschpack in der Softwarentwicklung forciert.<br>
+
       Derzeit bin ich als Softwareentwickler für den Bereich
+
       Anlagen- und Systemtechnik für den Ausbau diese System- und Anlagenmarktes verantwortlich. Dazu gehört sowohl die Softwareentwicklung als auch die strategische Ausrichtung des Bereiches im Kontext der übergeordneten Firmenziele.
+
+
 
       In meiner Freizeit beschäftig ich mich zudem mit der Hausautomatisierung sowie an einer Vielzahl von OpenSource Projekten
 
+
+
 education:
+
       title: Ausbildung  
+
       summary:
+
         - degree: Staatlich geprüfter Techniker (Automatisierungstechnik)
+
           university: Gewerbliche Schulen Dillenburg
+
           time: 2009 - 2013
+
           details: |
+
               - Bullet point
+
               - Bullet point
+
               
 
+
+
         - degree: Ausbildung Mechatroniker
+
           university: LINDE+WIEMANN GmbH KG, Dillenburg
+
           time: 2005 - 2009
+
           details: |
+
             Describe your study here lorem ipsum dolor sit amet, consectetuer
+
             adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
+
             sociis natoque penatibus et magnis dis parturient montes, nascetur
+
             ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
+
             pretium quis, sem.
 
+
+
               - Bullet point
+
               - Bullet point       
 
+
+
 experiences:
+
     title: Beruflicher Werdegang  
+
     summary:
-      - role: Verantwortlicher Softwareentwickler im Bereich Anlagen- und Systemtechnik
+
+      - role: Lead software engineer for machines and system technology
+
         time: 2014 - heute
+
         company: Loesch Verpackungstechnik GmbH, Altendorf
+
         business: Verpackungsanlagen / Sondermaschinenbau
+
         details: |
-            - Entwicklung eines Software- und HMI Templates für den System- und Anlagenmarkt
+
+            - Entwicklung eines Software- und HMI Templates (Framework) für den System- und Anlagenmarkt
+
             - Erhöhung des Standardisierungs- und  Modularisierungsgrades
+
             - Direkter Ansprechpartner für Anfragen und Konzepte bei Anlagen- und Systemen
+
             - Verantwortlicher im Bereich Software für den Remotesupport
+
             
 
 
+
         technology:
+
           - name: Teamführung
+
           - name: Motion
+
           - name: Siemens S7, WinCC, TIA
+
           - name: Rockwell FactoryTalk View und Studio 2000
+
           - name: Anlagen und Systeme
+
           - name: Projektleitung
 
-      - role: Teilprojektleiter / Elektrokonstrukteur / Softwareentwickler
+
+
+      - role: Sub-project manager | Electrical engineering department
+
         time: 2013 - 2014
+
         company: Loesch Verpackungstechnik GmbH, Altendorf
+
         business: Verpackungsanlagen / Sondermaschinenbau
+
         details: |
+
             - Planung und Entwicklung von Verpackungsmaschinen 
+
             - Technische und terminliche Führung von Hardwareplanern und externen Ingenieurbüros
+
             - Kontinuierliche Kommunikation mit Kunden und Fremdfirmen
+
             - Inbetriebnahme und Abnahme von Verpackungsmaschinen beim Kunden
+
             - Kundenschulungen und Kundensupport im Bereich Software
 
+
+
         technology:
+
           - name: SoMachine Motion
-          - name: Siemens S7, TIA
+
+          - name: Siemens S7
+
+          - name: Siemens TIA
+
           - name: Codesys
+
           - name: Projektleitung
 
-      - role: Mechatroniker / Elektroplaner / Programmierer 
+
+
+      - role: Mechatronic specialists for machines and system technology  
+
         time: 2009 - 2013
+
         company: Linde + Wiemann GmbH, Dillenburg
+
         business: Automobilindustrie / Zulieferer
+
         details: |
-            - Elektroplanung von Sondermaschinen
-            - Erstellung CE-gerechter Dokumentation im Maschinen- und Anlagenbau
-            - Programmierung von Sondermaschinen
-            - Roboter Programmierung
-            - Schaltschrankbau
-            - Visualisierung von Sondermaschinen
-            - Schulung von Mitarbeitern
-            - Übergabe von Anlagen beim Kunden im Inn- und Ausland
+
+            - Elektroplanung von Sondermaschinen.
+
+            - Erstellung CE-gerechter Dokumentation im Maschinen- und Anlagenbau.
+
+            - Programmierung von Sondermaschinen.
+
+            - Roboter Programmierung.
+
+            - Schaltschrankbau.
+
+            - Visualisierung von Sondermaschinen.
+
+            - Schulung von Mitarbeiter.
+
+            - Übergabe von Anlagen beim Kunden im Inn- und Ausland.
+
+
 
         technology:
+
           - name: Robotic Kuka
-          - name: Siemens S7, WinCC Flexible
+
+          - name: Siemens S7
+
+          - name: Siemens TIA
+
+          - name: WinCC Flexible
+
           - name: Epaln P8
+
           - name: Prüfanlagen
+
           - name: Pilz Safety SPS
+
           - name: PAScal Safety Calculator
 
+
+
 #projects:
+
 #    title: Projekte
+
 #    intro: >
+
 #      You can list your side projects or open source libraries in this
+
 #      section. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
 #      Vestibulum et ligula in nunc bibendum fringilla a eu lectus.
 
+
+
 #    assignments:
+
 #      - title: Velocity
+
 #        link: "#hook"
+
 #        tagline: "A responsive website template designed to help startups promote, market and sell their products."
 
+
+
 #      - title: DevStudio
+
 #        link: "#"
+
 #        tagline: "A responsive website template designed to help web developers/designers market their services."
 
+
+
 #      - title: Tempo
+
 #        link: "#"
+
 #        tagline: "A responsive website template designed to help startups promote their products or services and to attract users &amp; investors"
 
+
+
 #      - title: Atom
+
 #        link: "#"
+
 #        tagline: "A comprehensive website template solution for startups/developers to market their mobile apps."
 
+
+
 #      - title: Delta
+
 #        link: "#"
+
  #       tagline: "A responsive Bootstrap one page theme designed to help app developers promote their mobile apps"
 
+
+
 #publications:
+
 #    title: Puplikationen
+
 #    intro: |
+
 #      You can list your publications in this section. Lorem ipsum dolor sit
+
 #      amet, consectetur adipiscing elit. Vestibulum et ligula in nunc
+
 #      bibendum fringilla a eu lectus.
+
 #
+
 #    papers:
+
 #      - title: The Art of Computer Programming
+
 #        authors: Donald E. Knuth
+
 #        conference: Addison-Wesley, 1968
+
 #
+
 #      - title: "Genetic Programming III: Darwinian Invention &amp; Problem Solving"
+
 #        authors: Koza, J.R., Andre, D., Bennett, F.H., Keane, M.A.
+
 #        conference: "Morgan Kaufmann Publishers Inc., San Francisco, CA, USA, 1st edn. (1999)"
+
 #
+
 #      - title: A syntax directed compiler for Algol 60
+
 #        authors: Edgar T. Irons
+
 #        conference: "Comm. ACM 4 (1961), 51–55"
 
+
+
 skills:
+
     title: Besondere Kenntnisse
 
+
+
     toolset:
+
       - name: Siemens STEP 7
+
         level: 95%
 
+
+
       - name: Siemens TIA
+
         level: 85%
 
+
+
       - name: Schneider PacDrive 3
+
         level: 98%
 
+
+
       - name: Codesys
+
         level: 80%           
 
+
+
       - name: Python
+
         level: 40%
 
+
+
       - name: HTML5 & CSS
+
         level: 30%
 
+
+
       - name: Git & Subversion
+
         level: 60%
 
 
 
+
+
+
+
 #otherskills:
+
 #    title: Weitere Kenntnisse
+
 #    toolset:
+
 #      - name: Siemens STEP 7
+
 #      - name: Siemens TIA
+
 #      - name: Schneider PacDrive 3
+
 #      - name: Codesys
+
 #      - name: Codesys    
 
 
+
+
+
 footer: >
+
     Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>
