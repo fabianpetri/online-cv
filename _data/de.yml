@@ -400,19 +400,23 @@ skills:
 
       - name: Codesys
 
-        level: 80%           
+        level: 75%           
 
 
 
       - name: Python
 
-        level: 40%
+        level: 70%
+        
+        
+      - name: C# , WPF
 
+        level: 65%
 
 
       - name: HTML5 & CSS
 
-        level: 30%
+        level: 40%
 
 
 
