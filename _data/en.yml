@@ -95,10 +95,9 @@ experiences:
             
 
         technology:
+          - name: Teamführung
           - name: Motion
-          - name: Siemens S7
-          - name: Siemens WinCC
-          - name: Siemens TIA
+          - name: Siemens S7, WinCC, TIA
           - name: Rockwell FactoryTalk View und Studio 2000
           - name: Anlagen und Systeme
           - name: Projektleitung
