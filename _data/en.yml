@@ -4,108 +4,63 @@
 
 #
 
-
-
-
-
-
-
 titel: Resume / CV Fabian Petri
 
 sidebar:
-
     education: True # set to False if you want education in main section instead of in sidebar
 
-
-
     # Profile information
-
     name: Fabian Petri
-
     tagline: Softwareentwickler / Automatisierungstechniker
-
     avatar: profile.png  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
 
 
 
     # Sidebar links
-
     email: info@fabianpetri.com
-
     phone: +49 151 222 15 000
-
     website: fabianpetri.com #do not add http://
-
     xing: fabian_petri
-
     linkedin: fabian-petri-962697173
-
     github: fabianpetri
-
     gitlab:
-
     bitbucket:
-
     twitter:
-
     stack-overflow: # Number/Username, e.g. 123456/alandoe
-
     codewars:
-
-
-
     languages:
-
         title: Sprachen
-
         summary:
-
           - idiom: Deutsch
-
             level: Muttersprache
 
-
-
           - idiom: Englich
-
             level: Gute Kentnisse
 
-
-
     interests:
-
         title: Interessen
-
         summary:
-
           - item: IoT
-
             link:
-
-
 
           - item: Home Automation
-
             link:
 
-
-
           - item: Sport
-
+            link:
+                     
+          - item: RC Modellbau
             link:
 
 
 
 career-profile:
-
     title: Karriere Profil
-
     summary: |
-
-      Ich habe über 10 Jahre Erfahrung in der Softwarentwicklung und Automatisierungstechnik im Anlagen- u. Maschinenbau, hauptsächlich in den Bereichen Automotiv- und Verpackungsanlagen. In den letzten 4 Jahren habe ich die Weiterentwicklung des System- und Anlagemarktes  bei Loeschpack in der Softwarentwicklung forciert.<br>
+      Ich habe über 10 Jahre Erfahrung in der Softwareentwicklung und Automatisierungstechnik im Anlagen- u. Maschinenbau, hauptsächlich in den Bereichen Automotiv- und Verpackungsanlagen. In den letzten 4 Jahren habe ich die Weiterentwicklung des System- und Anlagemarktes  bei Loeschpack in der Softwareentwicklung forciert.<br>
       Derzeit bin ich als Softwareentwickler für den Bereich
       Anlagen- und Systemtechnik für den Ausbau diese System- und Anlagenmarktes verantwortlich. Dazu gehört sowohl die Softwareentwicklung als auch die strategische Ausrichtung des Bereiches im Kontext der übergeordneten Firmenziele.
-      In meiner Freizeit beschäftig ich mich zudem mit der Hausautomatisierung sowie an einer Vielzahl von OpenSource Projekten
+      In meiner Freizeit beschäftig ich mich mit der Hausautomatisierung sowie mit OpenSource Projekten.
 
 
 
@@ -114,100 +69,56 @@ education:
       title: Ausbildung  
 
       summary:
-
         - degree: Staatlich geprüfter Techniker (Automatisierungstechnik)
-
           university: Gewerbliche Schulen Dillenburg
-
           time: 2009 - 2013
-
           details: |
-
               - Bullet point
-
               - Bullet point
-
-              
-
-
 
         - degree: Ausbildung Mechatroniker
-
           university: LINDE+WIEMANN GmbH KG, Dillenburg
-
           time: 2005 - 2009
 
           details: |
-
             Describe your study here lorem ipsum dolor sit amet, consectetuer
-
             adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
-
             sociis natoque penatibus et magnis dis parturient montes, nascetur
-
             ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
-
-            pretium quis, sem.
-
-
+            pretium quis, sem
 
               - Bullet point
-
               - Bullet point       
 
-
-
 experiences:
-
     title: Beruflicher Werdegang  
-
     summary:
-
       - role: Lead software engineer for machines and system technology
-
         time: 2014 - heute
-
         company: Loesch Verpackungstechnik GmbH, Altendorf
-
         business: Verpackungsanlagen / Sondermaschinenbau
-
         details: |
-
             - Entwicklung eines Software- und HMI Templates (Framework) für den System- und Anlagenmarkt
             - Erhöhung des Standardisierungs- und  Modularisierungsgrades
             - Direkter Ansprechpartner für Anfragen und Konzepte bei Anlagen- und Systemen
             - Verantwortlicher im Bereich Software für den Remotesupport
 
-            
-
-
-
         technology:
 
           - name: Teamführung
-
           - name: Motion
-
           - name: Siemens S7, WinCC, TIA
-
           - name: Rockwell FactoryTalk View und Studio 2000
-
           - name: Anlagen und Systeme
-
           - name: Projektleitung
 
 
 
       - role: Sub-project manager | Electrical engineering department
-
         time: 2013 - 2014
-
         company: Loesch Verpackungstechnik GmbH, Altendorf
-
         business: Verpackungsanlagen / Sondermaschinenbau
-
         details: |
-
             - Planung und Entwicklung von Verpackungsmaschinen 
             - Technische und terminliche Führung von Hardwareplanern und externen Ingenieurbüros
             - Kontinuierliche Kommunikation mit Kunden und Fremdfirmen
@@ -217,60 +128,37 @@ experiences:
 
 
         technology:
-
           - name: SoMachine Motion
-
           - name: Siemens S7
-
           - name: Siemens TIA
-
           - name: Codesys
-
           - name: Projektleitung
 
 
 
       - role: Mechatronic specialists for machines and system technology  
-
         time: 2009 - 2013
-
         company: Linde + Wiemann GmbH, Dillenburg
-
         business: Automobilindustrie / Zulieferer
-
         details: |
-
-            - Elektroplanung von Sondermaschinen.
-            - Erstellung CE-gerechter Dokumentation im Maschinen- und Anlagenbau.
-            - Programmierung von Sondermaschinen.
-            - Roboter Programmierung.
-            - Schaltschrankbau.
-            - Visualisierung von Sondermaschinen.
-            - Schulung von Mitarbeiter.
-            - Übergabe von Anlagen beim Kunden im Inn- und Ausland.
-
-
-
+            - Elektroplanung von Sondermaschinen
+            - Erstellung CE-gerechter Dokumentation im Maschinen- und Anlagenbau
+            - Programmierung von Sondermaschinen
+            - Roboter Programmierung
+            - Schaltschrankbau
+            - Visualisierung von Sondermaschinen
+            - Schulung von Mitarbeiter
+            - Übergabe von Anlagen beim Kunden im Inn- und Ausland
         technology:
-
           - name: Robotic Kuka
-
           - name: Siemens S7
-
           - name: Siemens TIA
-
           - name: WinCC Flexible
-
           - name: Epaln P8
-
           - name: Prüfanlagen
-
           - name: Pilz Safety SPS
-
           - name: PAScal Safety Calculator
-
-
-
+          
 #projects:
 
 #    title: Projekte
@@ -370,59 +258,30 @@ experiences:
 skills:
 
     title: Besondere Kenntnisse
-
-
-
     toolset:
-
       - name: Siemens STEP 7
-
         level: 95%
 
-
-
       - name: Siemens TIA
-
         level: 85%
 
-
-
       - name: Schneider PacDrive 3
-
         level: 98%
 
-
-
       - name: Codesys
-
         level: 75%           
 
-
-
       - name: Python
-
-        level: 70%
-        
+        level: 70%     
         
       - name: C# , WPF
-
         level: 65%
 
-
       - name: HTML5 & CSS
-
         level: 40%
 
-
-
       - name: Git & Subversion
-
         level: 60%
-
-
-
-
-
 
 
 #otherskills:
@@ -440,9 +299,6 @@ skills:
 #      - name: Codesys
 
 #      - name: Codesys    
-
-
-
 
 
 footer: >
