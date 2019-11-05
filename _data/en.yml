@@ -58,14 +58,12 @@ career-profile:
     title: Karriere Profil
     summary: |
       Ich habe über 10 Jahre Erfahrung in der Softwareentwicklung und Automatisierungstechnik im Anlagen- u. Maschinenbau, hauptsächlich in den Bereichen Automotive- und Verpackungsanlagen.
-      In den letzten 4 Jahren habe ich die Weiterentwicklung des System- und Anlagemarktes als <i>Lead software engineer for machines and system technology</i> bei Loeschpack in der Softwareentwicklung forciert.<br><br>
-      Dazu gehört die strategische Ausrichtung des Bereiches im Kontext der übergeordneten Firmenziele.
+      In den letzten 4 Jahren habe ich die Weiterentwicklung des System- und Anlagemarktes als <i>Lead software engineer for machines and system technology</i> bei Loeschpack in der Softwareentwicklung forciert.
+      Dazu gehört die strategische Ausrichtung des Bereiches im Kontext der übergeordneten Firmenziele.<br><br>
       In meiner Freizeit beschäftige ich mich mit der Hausautomatisierung sowie mit OpenSource Projekten.
 
 education:
-
       title: Ausbildung  
-
       summary:
         - degree: Staatlich geprüfter Techniker (Automatisierungstechnik)
           university: Gewerbliche Schulen Dillenburg
@@ -102,7 +100,6 @@ experiences:
             - Verantwortung im Bereich Software für den Remotesupport
 
         technology:
-
           - name: Teamführung
           - name: Motion
           - name: Siemens S7, WinCC, TIA
@@ -121,7 +118,6 @@ experiences:
             - Kontinuierliche Kommunikation mit Kunden und Fremdfirmen
             - Inbetriebnahme und Abnahme von Verpackungsmaschinen beim Kunden
             - Kundenschulungen und Kundensupport im Bereich Software
-
         technology:
           - name: SoMachine Motion
           - name: Siemens S7
