@@ -1,0 +1,19 @@
+{% assign personal-data = site.data[page.lang].sidebar.personal-data %}
+{% if personal-data %}
+<div class="personal-data-container container-block">
+
+  <h2 class="container-block-title">
+    {{ personal-data.title }}
+  </h2>
+
+  <ul class="list-unstyled interests-list">
+    {%for personal-data in personal-data.summary %}
+    <li>
+      <h4 class="personal-data-idiom">{{ personal-data.idiom }}</h4>
+      <span class="personal-data-desc">{{ personal-data.content }}</span>
+    </li>
+    {% endfor %}
+  </ul>
+
+</div><!--//personal-data-->
+{% endif %}
