@@ -1,224 +1,315 @@
 #
+
 # Be aware that even a small syntax error here can lead to failures in output.
+
 #
 
-
-
 titel: Resume / CV Fabian Petri
+
 sidebar:
-    education: True # set to False if you want education in main section instead of in sidebar
+  education: True # set to False if you want education in main section instead of in sidebar
 
-    # Profile information
-    name: Fabian Petri
-    tagline: PLC software engineer
-    avatar: profile.png  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
+  # Profile information
+  name: Fabian Petri
+  tagline: Softwareentwickler / Automatisierungstechniker
+  avatar: profile.png #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
 
-    # Sidebar links
-    email: info@fabianpetri.com
-    phone: +49 151 222 15 000
-    website: fabianpetri.com #do not add http://
-    xing: fabian_petri
-    linkedin: fabian-petri-962697173
-    github: fabianpetri
-    gitlab:
-    bitbucket:
-    twitter:
-    stack-overflow: # Number/Username, e.g. 123456/alandoe
-    codewars:
+  # Sidebar links
+  email: info@fabianpetri.com
+  phone: +49 151 222 15 000
+  website: fabianpetri.com #do not add http://
+  xing: fabian_petri
+  linkedin: fabian-petri-962697173
+  github: fabianpetri
+  gitlab:
+  bitbucket:
+  twitter:
+  stack-overflow: # Number/Username, e.g. 123456/alandoe
+  codewars:
+  languages:
+    title: Sprachen
+    summary:
+      - idiom: Deutsch
+        level: Muttersprache
 
-    languages:
-        title: LANGUAGES
-        summary:
-          - idiom: German
-            level: Native
+      - idiom: Englich
+        level: Verhandlungssicher
 
-          - idiom: English
-            level: Professional
+  personal-data:
+    title: Persönliche Daten
+    summary:
+      - idiom: "Geburtsdatum:"
+        content: 02.03.1988
 
-    interests:
-        title: Interests
-        summary:
-          - item: IoT
-            link:
+      - idiom: "Geburtsort:"
+        content: Haiger
 
-          - item: Home Automation
-            link:
+      - idiom: "Familienstand:"
+        content: ledig
 
-          - item: Sport
-            link:
+      - idiom: "Staatsangehörigkeit:"
+        content: Deutsch
+
+  interests:
+    title: Interessen
+    summary:
+      - item: IoT
+        link:
+
+      - item: Home Automation
+        link:
+
+      - item: Sport
+        link:
+
+      - item: RC Modellbau
+        link:
 
 career-profile:
-    title: CAREER PROFILE
-    summary: |
-      Summarise your career here lorem ipsum dolor sit amet, consectetuer
-      adipiscing elit. You can [download this free resume/CV template here]().
-      Aenean commodo ligula eget dolor aenean massa. Cum sociis natoque
-      penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-      Donec quam felis, ultricies nec, pellentesque eu.
-
-      Second paragraph if required.
-
+  title: Karriere Profil
+  summary: |
+    Ich habe über 10 Jahre Erfahrung in der Softwareentwicklung und Automatisierungstechnik im Anlagen- u. Maschinenbau, hauptsächlich in den Bereichen Automotive- und Verpackungsanlagen.
+    <br><br>
+    In den letzten 3 Jahren leite ich als "Lead Developer for HMI" die Neuentwicklung des Human Machine Interface (Mensch-Maschine-Schnittstellen) bei Loeschpack.
+    Dies umfasst die Evaluierung und Entwicklung der Hardware und Software Architektur sowie das Planen und Erstellen eines CI/CD Prozesses.
+    <br><br>
+    Des Weiteren forciere ich die Weiterentwicklung des System- und Anlagemarktes als "Lead software engineer for machines and system technology" bei Loeschpack in der Softwareentwicklung. Neben der Softwareentwicklung gehört auch die strategische Ausrichtung des System- und Anlagemarktes im Kontext der übergeordneten Firmenziele zu meinem Aufgabengebiet.
+    <br><br>
+    In meiner Freizeit beschäftige ich mich mit der Hausautomatisierung sowie mit OpenSource Projekten.
 education:
-      title: EDUCATION  
-      summary:
-        - degree: MSc in Computer Science
-          university: University of London
-          time: 2011 - 2012
-          details: |
-            Describe your study here lorem ipsum dolor sit amet, consectetuer
-            adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
-            sociis natoque penatibus et magnis dis parturient montes, nascetur
-            ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
-            pretium quis, sem.
+  title: Ausbildung
+  summary:
+    - degree: Staatlich geprüfter Techniker (Automatisierungstechnik)
+      university: Gewerbliche Schulen Dillenburg
+      time: 2009 - 2013
+      details: |
+        - Bullet point
+        - Bullet point
 
-              - Bullet point
-              - Bullet point
+    - degree: Ausbildung Mechatroniker
+      university: LINDE+WIEMANN GmbH KG, Dillenburg
+      time: 2005 - 2009
 
-        - degree: BSc in Applied Mathematics
-          university: Bristol University
-          time: 2007 - 2011
-          details: |
-            Describe your study here lorem ipsum dolor sit amet, consectetuer
-            adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
-            sociis natoque penatibus et magnis dis parturient montes, nascetur
-            ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
-            pretium quis, sem.
+      details: |
+        Describe your study here lorem ipsum dolor sit amet, consectetuer
+        adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
+        sociis natoque penatibus et magnis dis parturient montes, nascetur
+        ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
+        pretium quis, sem
 
-              - Bullet point
-              - Bullet point       
+          - Bullet point
+          - Bullet point
 
 experiences:
-    title: EXPERIENCES 
-    summary:
-      - role: Lead Developer
-        time: 2015 - Present
-        company: Startup Hubs, San Francisco
-        details: |
-          Describe your role here lorem ipsum dolor sit amet, consectetuer
-          adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-          Cum sociis natoque penatibus et magnis dis parturient montes,
-          nascetur ridiculus mus. Donec quam felis, ultricies nec,
-          pellentesque eu, pretium quis, sem. Nulla consequat massa quis
-          enim. Donec pede justo. Sed ut perspiciatis unde omnis iste natus
-          error sit voluptatem accusantium doloremque laudantium, totam rem
-          aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-          architecto beatae vitae dicta sunt explicabo.
+  title: Beruflicher Werdegang
+  summary:
+    - role: Lead Developer for Human Machine Interface
+      time: 2019 - heute
+      company: Loesch Verpackungstechnik GmbH, Altendorf
+      business: Verpackungsanlagen / Sondermaschinenbau
+      details: |
+        - Entwicklung und Umsetzung eines einheitlichen HMI Frameworks für alle Steuerungsarchitekturen und Maschinen-Plattformen
+        - Evaluation der zukünftigen HMI Hard- und Software Struktur
+        - Entwicklung und Umsetzumg eines CI/CD Prozesses
 
-        technology:
-          - name: Motion
-          - name: Siemens S7
-          - name: Siemens TIA
-          - name: Teilprojektleitung
-          - name: Anlagen
-          - name: Test1
-          - name: test 2
+      technology:
+        - name: Teamführung
+        - name: Softwarearchitektur
+        - name: VisiWin
+        - name: C# /.Net-Framework
+        - name: CI / CD
+        - name: UI/UX Design
+        - name: Projektleitung
 
-      - role: Senior Software Engineer
-        time: 2014 - 2015
-        company: Linde + Wiemann GmbH, Deutschalnd
-        details: |
-          Describe your role here lorem ipsum dolor sit amet, consectetuer
-          adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-          Cum sociis natoque penatibus et magnis dis parturient montes,
-          nascetur ridiculus mus. Donec quam felis, ultricies nec,
-          pellentesque eu, pretium quis, sem.
+    - role: Lead software engineer for machines and system technology
+      time: 2014 - heute
+      company: Loesch Verpackungstechnik GmbH, Altendorf
+      business: Verpackungsanlagen / Sondermaschinenbau
+      details: |
+        - Entwicklung eines Software- und HMI Templates (Framework) für den System- und Anlagenmarkt
+        - Erhöhung des Standardisierungs- und  Modularisierungsgrades
+        - Direkter Ansprechpartner für Anfragen und Konzepte bei Anlagen- und Systemen
+        - Verantwortung im Bereich Software für den Remotesupport
 
-            - Bullet point
-            - Bullet point
+      technology:
+        - name: Teamführung
+        - name: Motion
+        - name: Siemens S7, WinCC, TIA
+        - name: Rockwell FactoryTalk View und Studio 2000
+        - name: Anlagen und Systeme
+        - name: Projektleitung
 
-        technology:
-          - name: Robotic
-          - name: Siemens S7
-          - name: Siemens TIA
-          - name: Epaln P8
-          - name: Prüfanlagen
-          - name: Pilz Safety SPS
-          - name: PAScal Safety Calculator
+    - role: Sub-project manager | Electrical engineering department
+      time: 2013 - 2014
+      company: Loesch Verpackungstechnik GmbH, Altendorf
+      business: Verpackungsanlagen / Sondermaschinenbau
+      details: |
+        - Planung und Entwicklung von Verpackungsmaschinen 
+        - Technische und terminliche Führung von Hardwareplanern und externen Ingenieurbüros
+        - Kontinuierliche Kommunikation mit Kunden und Fremdfirmen
+        - Inbetriebnahme und Abnahme von Verpackungsmaschinen beim Kunden
+        - Kundenschulungen und Kundensupport im Bereich Software
+      technology:
+        - name: SoMachine Motion
+        - name: Siemens S7
+        - name: Siemens TIA
+        - name: Codesys
+        - name: Projektleitung
 
-projects:
-    title: PROJECTS
-    intro: >
-      You can list your side projects or open source libraries in this
-      section. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      Vestibulum et ligula in nunc bibendum fringilla a eu lectus.
+    - role: Mechatronic specialists for machines and system technology
+      time: 2009 - 2013
+      company: Linde + Wiemann GmbH, Dillenburg
+      business: Automobilindustrie / Zulieferer
+      details: |
+        - Elektroplanung von Sondermaschinen
+        - Erstellung CE-gerechter Dokumentation im Maschinen- und Anlagenbau
+        - Programmierung von Sondermaschinen
+        - Roboter Programmierung
+        - Schaltschrankbau
+        - Visualisierung von Sondermaschinen
+        - Schulung von Mitarbeiter
+        - Übergabe von Anlagen beim Kunden im Inn- und Ausland
+      technology:
+        - name: Robotic Kuka
+        - name: Siemens S7
+        - name: Siemens TIA
+        - name: WinCC Flexible
+        - name: Epaln P8
+        - name: Prüfanlagen
+        - name: Pilz Safety SPS
+        - name: PAScal Safety Calculator
 
-    assignments:
-      - title: Velocity
-        link: "#hook"
-        tagline: "A responsive website template designed to help startups promote, market and sell their products."
+#projects:
 
-      - title: DevStudio
-        link: "#"
-        tagline: "A responsive website template designed to help web developers/designers market their services."
+#    title: Projekte
 
-      - title: Tempo
-        link: "#"
-        tagline: "A responsive website template designed to help startups promote their products or services and to attract users &amp; investors"
+#    intro: >
 
-      - title: Atom
-        link: "#"
-        tagline: "A comprehensive website template solution for startups/developers to market their mobile apps."
+#      You can list your side projects or open source libraries in this
 
-      - title: Delta
-        link: "#"
-        tagline: "A responsive Bootstrap one page theme designed to help app developers promote their mobile apps"
+#      section. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 
-publications:
-    title: PUBLICATIONS
-    intro: |
-      You can list your publications in this section. Lorem ipsum dolor sit
-      amet, consectetur adipiscing elit. Vestibulum et ligula in nunc
-      bibendum fringilla a eu lectus.
+#      Vestibulum et ligula in nunc bibendum fringilla a eu lectus.
 
-    papers:
-      - title: The Art of Computer Programming
-        authors: Donald E. Knuth
-        conference: Addison-Wesley, 1968
+#    assignments:
 
-      - title: "Genetic Programming III: Darwinian Invention &amp; Problem Solving"
-        authors: Koza, J.R., Andre, D., Bennett, F.H., Keane, M.A.
-        conference: "Morgan Kaufmann Publishers Inc., San Francisco, CA, USA, 1st edn. (1999)"
+#      - title: Velocity
 
-      - title: A syntax directed compiler for Algol 60
-        authors: Edgar T. Irons
-        conference: "Comm. ACM 4 (1961), 51–55"
+#        link: "#hook"
+
+#        tagline: "A responsive website template designed to help startups promote, market and sell their products."
+
+#      - title: DevStudio
+
+#        link: "#"
+
+#        tagline: "A responsive website template designed to help web developers/designers market their services."
+
+#      - title: Tempo
+
+#        link: "#"
+
+#        tagline: "A responsive website template designed to help startups promote their products or services and to attract users &amp; investors"
+
+#      - title: Atom
+
+#        link: "#"
+
+#        tagline: "A comprehensive website template solution for startups/developers to market their mobile apps."
+
+#      - title: Delta
+
+#        link: "#"
+
+#       tagline: "A responsive Bootstrap one page theme designed to help app developers promote their mobile apps"
+
+#publications:
+
+#    title: Puplikationen
+
+#    intro: |
+
+#      You can list your publications in this section. Lorem ipsum dolor sit
+
+#      amet, consectetur adipiscing elit. Vestibulum et ligula in nunc
+
+#      bibendum fringilla a eu lectus.
+
+#
+
+#    papers:
+
+#      - title: The Art of Computer Programming
+
+#        authors: Donald E. Knuth
+
+#        conference: Addison-Wesley, 1968
+
+#
+
+#      - title: "Genetic Programming III: Darwinian Invention &amp; Problem Solving"
+
+#        authors: Koza, J.R., Andre, D., Bennett, F.H., Keane, M.A.
+
+#        conference: "Morgan Kaufmann Publishers Inc., San Francisco, CA, USA, 1st edn. (1999)"
+
+#
+
+#      - title: A syntax directed compiler for Algol 60
+
+#        authors: Edgar T. Irons
+
+#        conference: "Comm. ACM 4 (1961), 51–55"
 
 skills:
-    title: SKILLS & PROFICIENCY
+  title: Besondere Kenntnisse
+  toolset:
+    - name: Siemens STEP 7
+      level: 95%
 
-    toolset:
-      - name: Siemens STEP 7
-        level: 95%
+    - name: Siemens TIA
+      level: 85%
 
-      - name: Siemens TIA
-        level: 90%
+    - name: Schneider PacDrive 3
+      level: 98%
 
-      - name: Schneider PacDrive 3
-        level: 98%
+    - name: Codesys
+      level: 80%
 
-      - name: Codesys
-        level: 90%
+    - name: Python
+      level: 40%
 
-      - name: Codesys
-        level: 60%            
+    - name: C# , WPF
+      level: 75%
 
-      - name: Python & Django
-        level: 50%
+    - name: Javascript
+      level: 35%
 
-      - name: Javascript & jQuery
-        level: 20%
+    - name: React
+      level: 20%
 
-      - name: Angular
-        level: 98%
+    - name: HTML5 & CSS
+      level: 40%
 
-      - name: HTML5 & CSS
-        level: 30%
+    - name: Git & Subversion
+      level: 75%
 
-      - name: Git & Subversion
-        level: 80%
+#otherskills:
 
-      - name: Sketch & Photoshop
-        level: 60%
+#    title: Weitere Kenntnisse
+
+#    toolset:
+
+#      - name: Siemens STEP 7
+
+#      - name: Siemens TIA
+
+#      - name: Schneider PacDrive 3
+
+#      - name: Codesys
+
+#      - name: Codesys
 
 footer: >
-    Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>
+
+  Designed with <i class="fas fa-heart"></i>
