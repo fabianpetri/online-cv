@@ -98,8 +98,13 @@ education:
 experiences:
   title: Beruflicher Werdegang
   summary:
+    - role: Software engineer
+      time: 2023 - heute
+      company: ROTZINGER PharmaPack GmbH
+      business: Pharma / Lebensmittel / Kartoniermaschinen / Linienlösung / Track & Trace / Deep Learning
+        
     - role: Lead Developer for Human Machine Interface
-      time: 2019 - heute
+      time: 2019 - 2023
       company: Loesch Verpackungstechnik GmbH, Altendorf
       business: Verpackungsanlagen / Sondermaschinenbau
       details: |
