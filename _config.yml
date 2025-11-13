@@ -2,11 +2,15 @@
 
 # Site Settings
 title: My Resume
-url: 'http://fabianpetri.com'
-baseurl: '/online-cv' #change it according to your repository name
-description: Online resume of Fabian Petri Software Developer and Automation Enthusiast 
+url: 'http://webjeda.com'
+
+#change it according to your repository name
+# disabling since we are using a custom domain
+#baseurl: '/online-cv' 
+
+description: A beautiful Jekyll theme for creating resume
 # Style will be applied only after restarting the build or serve. Just choose one of the options.
-theme_skin: green # blue turquoise green berry orange ceramic
+theme_skin: blue # blue turquoise green berry orange ceramic teal oceanstale
 chrome_mobile_color: #use hex colors (ex:#1976d2) or leave empty if you don't want a color for chrome mobile searchbar
 
 # Tracker
@@ -28,5 +32,5 @@ compress_html: # - http://jch.penibelst.de/
 
 # Development Settings
 port: 4000
-host: 127.0.0.1
+host: 0.0.0.0
 safe: false

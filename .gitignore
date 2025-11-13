@@ -1,12 +1,5 @@
+# Cache
 _site/
 .sass-cache/
-.jekyll-cache/
 .jekyll-metadata
-.jekyll-metadata
-_sass/skins/_turquoise.scss
-_sass/skins/_orange.scss
-_sass/skins/_green.scss
-_sass/skins/_ceramic.scss
-_sass/skins/_blue.scss
-.bundle/
-vendor/
+.jekyll-cache
