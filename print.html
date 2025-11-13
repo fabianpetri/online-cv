@@ -1,12 +1,13 @@
 ---
 layout: print
 permalink: /print
+lang: de
 ---
 
 
 {% include career-profile.html %}
 
-{% unless site.data.data.sidebar.education %}
+{% unless site.data[page.lang].sidebar.education %}
   {% include education.html %}
 {% endunless %}
 

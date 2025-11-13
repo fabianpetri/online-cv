@@ -2,10 +2,10 @@
 #Add "layout: compress" here to compress the html code
 ---
 <!DOCTYPE html>
-<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
-<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if IE 8]> <html lang="{{ page.lang | default: site.lang | default: 'en' }}" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="{{ page.lang | default: site.lang | default: 'en' }}" class="ie9"> <![endif]-->
 <!--[if !IE]><!-->
-<html lang="en"> <!--<![endif]-->
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}"> <!--<![endif]-->
 {% include head.html %}
 
 <body>
@@ -21,7 +21,25 @@
     {% include sidebar.html %}
 
     <div class="main-wrapper">
-      {{ content }}
+      {% include career-profile.html %}
+
+      {% unless site.data[page.lang].sidebar.education %}
+        {% include education.html %}
+      {% endunless %}
+
+      {% include experiences.html %}
+
+      {% include certifications.html %}
+
+      {% include projects.html %}
+
+      {% include oss-contributions.html %}
+
+      {% include publications.html %}
+
+      {% include recommendations.html %}
+
+      {% include skills.html %}
     </div>
   </div>
 
