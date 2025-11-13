@@ -7,7 +7,7 @@
   </h2>
 
   <ul class="list-unstyled interests-list">
-    {% for interest in interests.info %}
+    {% for interest in interests.summary %}
 
       {% if interest.link %}
       <li><a href="{{ interest.link }}">{{ interest.item }}</a></li>
