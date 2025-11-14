@@ -7,7 +7,7 @@ sidebar:
 
   # Profile information
   name: Fabian Petri
-  tagline: Softwareentwickler / Automatisierungstechniker
+  tagline: Software Developer / Automation Engineer
   avatar: profile.png #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
 
   # Sidebar links
@@ -23,31 +23,31 @@ sidebar:
   stack-overflow: # Number/Username, e.g. 123456/alandoe
   codewars:
   languages:
-    title: Sprachen
+    title: Languages
     summary:
-      - idiom: Deutsch
-        level: Muttersprache
+      - idiom: German
+        level: Native
 
-      - idiom: Englisch
-        level: Verhandlungssicher
+      - idiom: English
+        level: Fluent
 
   personal-data:
-    title: Persönliche Daten
+    title: Personal Data
     summary:
-      - idiom: "Geburtsdatum:"
+      - idiom: "Date of Birth:"
         content: 02.03.1988
 
-      - idiom: "Geburtsort:"
+      - idiom: "Place of Birth:"
         content: Haiger
 
-      - idiom: "Familienstand:"
-        content: ledig
+      - idiom: "Marital Status:"
+        content: Single
 
-      - idiom: "Staatsangehörigkeit:"
-        content: Deutsch
+      - idiom: "Nationality:"
+        content: German
 
   interests:
-    title: Interessen
+    title: Interests
     summary:
       - item: IoT
         link:
@@ -55,33 +55,33 @@ sidebar:
       - item: Home Automation
         link:
 
-      - item: Sport
+      - item: Sports
         link:
 
-      - item: RC Modellbau
+      - item: RC Model Building
         link:
 
 career-profile:
-  title: Karriere Profil
+  title: Career Profile
   summary: |
-    Ich verfüge über mehr als 10 Jahre Erfahrung in der Softwareentwicklung und Automatisierungstechnik im Anlagen- und Maschinenbau, insbesondere in den Bereichen Automotive- und Verpackungsanlagen.
+    I have more than 10 years of experience in software development and automation technology in plant and machine engineering, particularly in the areas of automotive and packaging systems.
     <br><br>
-    In den letzten 3 Jahren habe ich bei Loeschpack als "Lead Developer for HMI" die Neuentwicklung der Mensch-Maschine-Schnittstellen (HMI) geleitet, was die Evaluierung und Entwicklung von Hardware- und Softwarearchitekturen sowie die Implementierung eines CI/CD-Prozesses umfasst. 
+    Over the past 3 years, I led the redevelopment of Human-Machine Interfaces (HMI) at Loeschpack as "Lead Developer for HMI", which included the evaluation and development of hardware and software architectures as well as the implementation of a CI/CD process.
     <br><br>
-    Zusätzlich habe ich die Weiterentwicklung des System- und Anlagemarktes bei Loeschpack als "Lead Software Engineer for Machines and System Technology" vorangetrieben und war für die strategische Ausrichtung im Einklang mit den Unternehmenszielen verantwortlich.
+    Additionally, I drove the advancement of the system and plant market at Loeschpack as "Lead Software Engineer for Machines and System Technology" and was responsible for strategic alignment in accordance with corporate goals.
     <br><br>
-    Derzeit arbeite ich als Softwareentwickler bei Rozinger PharmaPack, wo ich an der Entwicklung eines neuen HMIs für verschiedene Maschinentypen arbeite. In meiner Freizeit widme ich mich der Hausautomatisierung und engagiere mich in Open-Source-Projekten.
+    Currently, I work as a software developer at Rotzinger PharmaPack, where I am developing a new HMI for various machine types. In my free time, I dedicate myself to home automation and engage in open-source projects.
 education:
-  title: Ausbildung
+  title: Education
   summary:
-    - degree: Staatlich geprüfter Techniker (Automatisierungstechnik)
+    - degree: State Certified Technician (Automation Technology)
       university: Gewerbliche Schulen Dillenburg
       time: 2009 - 2013
       details: |
         - Bullet point
         - Bullet point
 
-    - degree: Ausbildung Mechatroniker
+    - degree: Mechatronics Apprenticeship
       university: LINDE+WIEMANN GmbH KG, Dillenburg
       time: 2005 - 2009
 
@@ -96,91 +96,91 @@ education:
           - Bullet point
 
 experiences:
-  title: Beruflicher Werdegang
+  title: Professional Experience
   summary:
     - role: Software engineer
-      time: 2023 - heute
+      time: 2023 - Present
       company: ROTZINGER PharmaPack GmbH
-      business: Pharma / Lebensmittel / Kartoniermaschinen / Linienlösung / Track & Trace / Deep Learning
-        
+      business: Pharmaceutical / Food / Cartoning Machines / Line Solutions / Track & Trace / Deep Learning
+
     - role: Lead Developer for Human Machine Interface
       time: 2019 - 2023
       company: Loesch Verpackungstechnik GmbH, Altendorf
-      business: Verpackungsanlagen / Sondermaschinenbau
+      business: Packaging Systems / Special Machine Engineering
       details: |
-        - Entwicklung und Umsetzung eines einheitlichen HMI Frameworks für alle Steuerungsarchitekturen und Maschinen-Plattformen
-        - Evaluation der zukünftigen HMI Hard- und Software Struktur
-        - Entwicklung und Umsetzumg eines CI/CD Prozesses
+        - Development and implementation of a unified HMI framework for all control architectures and machine platforms
+        - Evaluation of future HMI hardware and software structure
+        - Development and implementation of a CI/CD process
 
       technology:
-        - name: Teamführung
-        - name: Softwarearchitektur
+        - name: Team Leadership
+        - name: Software Architecture
         - name: VisiWin
         - name: C# /.Net-Framework
         - name: CI / CD
         - name: UI/UX Design
-        - name: Projektleitung
+        - name: Project Management
 
     - role: Lead software engineer for machines and system technology
       time: 2014 - 2023
       company: Loesch Verpackungstechnik GmbH, Altendorf
-      business: Verpackungsanlagen / Sondermaschinenbau
+      business: Packaging Systems / Special Machine Engineering
       details: |
-        - Entwicklung eines Software- und HMI Templates (Framework) für den System- und Anlagenmarkt
-        - Erhöhung des Standardisierungs- und  Modularisierungsgrades
-        - Direkter Ansprechpartner für Anfragen und Konzepte bei Anlagen- und Systemen
-        - Verantwortung im Bereich Software für den Remotesupport
+        - Development of a software and HMI template (framework) for the system and plant market
+        - Increase of standardization and modularization level
+        - Direct contact person for inquiries and concepts for plants and systems
+        - Responsibility for software remote support
 
       technology:
-        - name: Teamführung
+        - name: Team Leadership
         - name: Motion
         - name: Siemens S7, WinCC, TIA
-        - name: Rockwell FactoryTalk View und Studio 2000
-        - name: Anlagen und Systeme
-        - name: Projektleitung
+        - name: Rockwell FactoryTalk View and Studio 2000
+        - name: Plants and Systems
+        - name: Project Management
 
     - role: Sub-project manager | Electrical engineering department
       time: 2013 - 2014
       company: Loesch Verpackungstechnik GmbH, Altendorf
-      business: Verpackungsanlagen / Sondermaschinenbau
+      business: Packaging Systems / Special Machine Engineering
       details: |
-        - Planung und Entwicklung von Verpackungsmaschinen 
-        - Technische und terminliche Führung von Hardwareplanern und externen Ingenieurbüros
-        - Kontinuierliche Kommunikation mit Kunden und Fremdfirmen
-        - Inbetriebnahme und Abnahme von Verpackungsmaschinen beim Kunden
-        - Kundenschulungen und Kundensupport im Bereich Software
+        - Planning and development of packaging machines
+        - Technical and schedule management of hardware planners and external engineering offices
+        - Continuous communication with customers and external companies
+        - Commissioning and acceptance of packaging machines at customer sites
+        - Customer training and customer support in the software area
       technology:
         - name: SoMachine Motion
         - name: Siemens S7
         - name: Siemens TIA
         - name: Codesys
-        - name: Projektleitung
+        - name: Project Management
 
-    - role: Mechatronic specialists for machines and system technology
+    - role: Mechatronics specialist for machines and system technology
       time: 2009 - 2013
       company: Linde + Wiemann GmbH, Dillenburg
-      business: Automobilindustrie / Zulieferer
+      business: Automotive Industry / Supplier
       details: |
-        - Elektroplanung von Sondermaschinen
-        - Erstellung CE-gerechter Dokumentation im Maschinen- und Anlagenbau
-        - Programmierung von Sondermaschinen
-        - Roboter Programmierung
-        - Schaltschrankbau
-        - Visualisierung von Sondermaschinen
-        - Schulung von Mitarbeiter
-        - Übergabe von Anlagen beim Kunden im Inn- und Ausland
+        - Electrical planning of special machines
+        - Creation of CE-compliant documentation in machine and plant engineering
+        - Programming of special machines
+        - Robot programming
+        - Control cabinet construction
+        - Visualization of special machines
+        - Employee training
+        - Handover of systems at customer sites domestically and abroad
       technology:
         - name: Robotic Kuka
         - name: Siemens S7
         - name: Siemens TIA
         - name: WinCC Flexible
         - name: Epaln P8
-        - name: Prüfanlagen
-        - name: Pilz Safety SPS
+        - name: Test Systems
+        - name: Pilz Safety PLC
         - name: PAScal Safety Calculator
 
 skills:
-  title: Besondere Kenntnisse
+  title: Special Skills
   toolset:
     - name: Siemens STEP 7
       level: 95%
