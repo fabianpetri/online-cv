@@ -4,7 +4,7 @@ _site/
 .jekyll-metadata
 .jekyll-cache
 
-# Cloudflare Workers
+# Cloudflare
 node_modules/
 .wrangler/
-wrangler.toml.bak
+.dev.vars

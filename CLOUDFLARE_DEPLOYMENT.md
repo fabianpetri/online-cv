@@ -1,223 +1,268 @@
-# Cloudflare Workers Deployment Guide
+# Cloudflare Pages Deployment Guide
 
-This guide will help you deploy your CV website to Cloudflare Workers with domain-based language routing:
+This guide will help you deploy your CV website to Cloudflare Pages with domain-based language routing:
 - **cv.fabianpetri.com** → English version
 - **cv.fabianpetri.de** → German version
 
 ## Prerequisites
 
 1. **Cloudflare Account**: Sign up at https://dash.cloudflare.com/sign-up
-2. **Node.js and npm**: Install from https://nodejs.org/
+2. **GitHub Account**: Your repository should be on GitHub
 3. **Domains**: Ensure both domains are added to your Cloudflare account
    - fabianpetri.com
    - fabianpetri.de
 
-## Step 1: Install Wrangler CLI
+## Deployment Method: Cloudflare Pages (Recommended)
 
-Install Cloudflare's Wrangler CLI globally:
+Cloudflare Pages automatically builds and deploys your Jekyll site directly from your GitHub repository.
 
-```bash
-npm install -g wrangler
-```
+### Step 1: Connect Your Repository to Cloudflare Pages
 
-Verify installation:
+1. Log in to the [Cloudflare Dashboard](https://dash.cloudflare.com)
+2. Go to **Workers & Pages**
+3. Click **Create application**
+4. Select the **Pages** tab
+5. Click **Connect to Git**
+6. Authorize Cloudflare to access your GitHub account
+7. Select your `online-cv` repository
 
-```bash
-wrangler --version
-```
+### Step 2: Configure Build Settings
 
-## Step 2: Authenticate with Cloudflare
+In the build configuration:
 
-Login to your Cloudflare account:
+- **Project name**: `online-cv` (or your preferred name)
+- **Production branch**: `main` (or your default branch)
+- **Framework preset**: Select **Jekyll**
+- **Build command**: `bundle exec jekyll build`
+- **Build output directory**: `_site`
+- **Root directory**: `/` (leave empty)
 
-```bash
-wrangler login
-```
+Environment variables:
+- **JEKYLL_ENV**: `production`
 
-This will open a browser window for authentication.
+Click **Save and Deploy**
 
-## Step 3: Configure Your Account ID
+### Step 3: Wait for Initial Build
 
-1. Log in to the Cloudflare Dashboard
-2. Navigate to any domain in your account
-3. Copy your Account ID from the right sidebar
-4. Edit `wrangler.toml` and add your account ID:
+Cloudflare Pages will:
+1. Clone your repository
+2. Install Ruby and dependencies
+3. Build your Jekyll site
+4. Deploy to a `*.pages.dev` URL
 
-```toml
-account_id = "your-account-id-here"
-```
+The first build takes 2-3 minutes.
 
-## Step 4: Build the Jekyll Site
+### Step 4: Configure Custom Domains
 
-Install Ruby dependencies (if not already done):
+#### For cv.fabianpetri.com:
 
-```bash
-bundle install
-```
+1. In your Pages project, go to **Custom domains**
+2. Click **Set up a custom domain**
+3. Enter: `cv.fabianpetri.com`
+4. Cloudflare will automatically:
+   - Create DNS records (if domains are in Cloudflare)
+   - Provision SSL certificate
+   - Configure routing
 
-Build the static site:
+#### For cv.fabianpetri.de:
 
-```bash
-./build.sh
-```
+1. Click **Set up a custom domain** again
+2. Enter: `cv.fabianpetri.de`
+3. Same automatic configuration applies
 
-Or manually:
-
-```bash
-bundle exec jekyll build
-```
-
-This creates the `_site/` directory with your static files.
-
-## Step 5: Deploy to Cloudflare Workers
-
-Deploy your site:
-
-```bash
-wrangler deploy
-```
-
-On first deployment, Wrangler will:
-- Create a new Worker in your Cloudflare account
-- Upload your static files
-- Configure the worker routes
-
-## Step 6: Configure DNS Records
-
-### For cv.fabianpetri.com:
-
-1. Go to Cloudflare Dashboard → fabianpetri.com → DNS
-2. Add a DNS record:
-   - Type: `CNAME`
-   - Name: `cv`
-   - Target: `your-worker-name.workers.dev` (or use `@` and let Cloudflare handle it)
-   - Proxy status: **Proxied** (orange cloud)
-
-### For cv.fabianpetri.de:
-
-1. Go to Cloudflare Dashboard → fabianpetri.de → DNS
-2. Add a DNS record:
-   - Type: `CNAME`
-   - Name: `cv`
-   - Target: `your-worker-name.workers.dev` (or use `@` and let Cloudflare handle it)
-   - Proxy status: **Proxied** (orange cloud)
-
-## Step 7: Configure Worker Routes
-
-In the Cloudflare Dashboard:
-
-1. Go to **Workers & Pages** → Your Worker → **Settings** → **Triggers**
-2. Add Routes:
-   - Route: `cv.fabianpetri.com/*` → Zone: `fabianpetri.com`
-   - Route: `cv.fabianpetri.de/*` → Zone: `fabianpetri.de`
-
-Or these should already be configured from `wrangler.toml`.
-
-## Step 8: Test Your Deployment
+### Step 5: Verify Deployment
 
 Visit your domains:
-- https://cv.fabianpetri.com (should show English version)
-- https://cv.fabianpetri.de (should show German version)
+- https://cv.fabianpetri.com (should redirect to English version)
+- https://cv.fabianpetri.de (should redirect to German version)
 
 ## How It Works
 
-The Worker script (`_worker.js`) handles routing:
+The routing is handled by **Cloudflare Pages Functions** (`functions/_middleware.js`):
 
-1. Checks the incoming request's hostname
-2. For `cv.fabianpetri.com`: Serves `/en.html` at the root
-3. For `cv.fabianpetri.de`: Serves `/de.html` at the root
-4. All other paths are served normally
+1. Intercepts requests to the root path (`/`)
+2. Checks the hostname
+3. Redirects to `/en.html` for cv.fabianpetri.com
+4. Redirects to `/de.html` for cv.fabianpetri.de
+5. All other assets (CSS, images, etc.) are served normally
 
-## Updating the Site
+## Automatic Deployments
+
+Cloudflare Pages automatically deploys when you push to your repository:
+
+- **Push to main branch** → Production deployment (cv.fabianpetri.com, cv.fabianpetri.de)
+- **Push to other branches** → Preview deployment (unique preview URL)
+
+### Preview Deployments
+
+Every pull request gets a unique preview URL:
+- Format: `<branch>.<project>.pages.dev`
+- Perfect for testing changes before merging
+
+## Updating Your CV
 
 To update your CV:
 
-1. Make changes to your data files (`_data/en.yml`, `_data/de.yml`)
-2. Rebuild the site: `./build.sh`
-3. Redeploy: `wrangler deploy`
+1. Edit `_data/en.yml` or `_data/de.yml`
+2. Commit and push to GitHub
+3. Cloudflare Pages automatically rebuilds and deploys
 
-## Alternative: Automated Deployment with GitHub Actions
+No manual deployment needed!
 
-Create `.github/workflows/deploy.yml`:
+## Build Configuration
 
-```yaml
-name: Deploy to Cloudflare Workers
+If you need to customize the build, create a `_headers` or `_redirects` file in your project root.
 
-on:
-  push:
-    branches:
-      - main  # or your production branch
+### Example: Custom Headers
 
-jobs:
-  deploy:
-    runs-on: ubuntu-latest
-    
-    steps:
-    - uses: actions/checkout@v3
-    
-    - name: Setup Ruby
-      uses: ruby/setup-ruby@v1
-      with:
-        ruby-version: '3.3'
-        bundler-cache: true
-    
-    - name: Build Jekyll site
-      run: bundle exec jekyll build
-    
-    - name: Deploy to Cloudflare Workers
-      uses: cloudflare/wrangler-action@v3
-      with:
-        apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-        accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+Create `_headers`:
+
+```
+/*
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
 ```
 
-To set this up:
-1. Create a Cloudflare API Token with "Edit Cloudflare Workers" permissions
-2. Add secrets to your GitHub repository:
-   - `CLOUDFLARE_API_TOKEN`: Your API token
-   - `CLOUDFLARE_ACCOUNT_ID`: Your account ID
+### Example: Additional Redirects
+
+Create `_redirects`:
+
+```
+/cv       /en.html    302
+/lebenslauf    /de.html    302
+```
+
+## Alternative: Manual Deployment via Wrangler CLI
+
+If you prefer manual control:
+
+1. Install Wrangler: `npm install -g wrangler`
+2. Login: `wrangler login`
+3. Build site: `bundle exec jekyll build`
+4. Deploy: `wrangler pages deploy _site --project-name=online-cv`
 
 ## Troubleshooting
 
-### Issue: Site not loading
+### Issue: Build Fails
 
-- Check DNS propagation: https://dnschecker.org/
-- Verify Worker routes are configured correctly
-- Check Cloudflare Dashboard → Workers & Pages → Your Worker → Logs
+**Check Build Logs:**
+1. Go to your Pages project
+2. Click **View build** on the failed deployment
+3. Check the error message
 
-### Issue: Wrong language showing
+**Common Issues:**
+- Missing Gemfile.lock: Commit it to your repository
+- Ruby version mismatch: Ensure Ruby 3.3+ is specified
+- Bundle install fails: Check Gemfile for issues
 
-- Clear your browser cache
-- Check the Worker script is deployed correctly
-- Verify hostname detection in `_worker.js`
+### Issue: Wrong Language Showing
 
-### Issue: Assets not loading (CSS, images)
+**Clear Cache:**
+- Browser cache: Hard refresh (Ctrl+Shift+R / Cmd+Shift+R)
+- Cloudflare cache: Go to project → **Deployments** → **Clear cache**
 
+**Check Functions:**
+- Verify `functions/_middleware.js` exists in repository
+- Check deployment logs for Functions errors
+
+### Issue: Custom Domain Not Working
+
+**Verify DNS:**
+- Go to your domain in Cloudflare Dashboard
+- Check DNS records for `cv` subdomain
+- Should show CNAME to `<project>.pages.dev`
+
+**Wait for Propagation:**
+- DNS changes take 1-5 minutes
+- SSL certificates provision in 1-2 minutes
+
+### Issue: Assets Not Loading (CSS, images)
+
+**Check Build:**
 - Ensure `baseurl` is empty in `_config.yml`
-- Rebuild the site: `./build.sh`
-- Redeploy: `wrangler deploy`
+- Verify `_site/` directory contains all assets
+- Check browser console for 404 errors
 
 ## Cost
 
-- **Cloudflare Workers Free Tier**: 100,000 requests/day
+- **Cloudflare Pages**: Free tier includes:
+  - Unlimited sites
+  - Unlimited requests
+  - 500 builds/month
+  - 1 concurrent build
 - **Cloudflare DNS**: Free
-- **Workers KV (if needed)**: First 100,000 reads/day are free
+- **SSL Certificates**: Free
 
-For a CV site, you'll likely stay within the free tier.
+Your CV site will stay within the free tier.
+
+## Advanced Configuration
+
+### Environment Variables
+
+Set in Pages project settings:
+
+- `JEKYLL_ENV=production`
+- `RUBY_VERSION=3.3.0` (if needed)
+
+### Branch Deployments
+
+Configure which branches trigger deployments:
+
+1. Go to Pages project → **Settings**
+2. **Builds & deployments** → **Branch deployments**
+3. Add branch patterns
+
+### Build Watch Paths
+
+Only rebuild when specific files change:
+
+1. Go to **Settings** → **Builds & deployments**
+2. **Build watch paths** → Add patterns
+3. Example: `_data/**`, `_includes/**`, `_layouts/**`
+
+## Monitoring
+
+### Analytics
+
+Cloudflare provides free analytics:
+- **Pages** → Your project → **Analytics**
+- View requests, bandwidth, errors
+
+### Build Notifications
+
+Get notified of build success/failure:
+1. Go to **Notifications** in Cloudflare Dashboard
+2. Add notification for **Pages deploy**
+3. Choose email, Discord, or webhooks
+
+## Comparison: Pages vs Workers
+
+| Feature | Cloudflare Pages | Workers |
+|---------|-----------------|---------|
+| Setup | Automatic from Git | Manual deployment |
+| SSL | Automatic | Manual configuration |
+| Build | Automatic | Manual build |
+| Cost | Free (generous) | Free (limited) |
+| Best For | Static sites | Dynamic applications |
+
+**Recommendation**: Use Cloudflare Pages (current setup) for your CV site.
 
 ## Support
 
-- Cloudflare Workers Documentation: https://developers.cloudflare.com/workers/
-- Wrangler Documentation: https://developers.cloudflare.com/workers/wrangler/
-- Jekyll Documentation: https://jekyllrb.com/docs/
+- Cloudflare Pages Documentation: https://developers.cloudflare.com/pages/
+- Pages Functions: https://developers.cloudflare.com/pages/functions/
+- Community Forum: https://community.cloudflare.com/
 
 ## Summary
 
-Your CV is now hosted on Cloudflare's global network with:
-- ✅ Fast CDN delivery worldwide
-- ✅ Automatic language routing by domain
-- ✅ HTTPS included
+Your CV is now deployed on Cloudflare Pages with:
+- ✅ Automatic deployments from GitHub
+- ✅ Domain-based language routing
+- ✅ Free SSL certificates
+- ✅ Global CDN (275+ cities)
+- ✅ Preview deployments for PRs
 - ✅ DDoS protection
-- ✅ 99.99% uptime SLA
+- ✅ 100% uptime SLA
 
-Enjoy your new CV site!
+Enjoy your new CV site! 🚀
