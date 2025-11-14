@@ -3,3 +3,8 @@ _site/
 .sass-cache/
 .jekyll-metadata
 .jekyll-cache
+
+# Cloudflare Workers
+node_modules/
+.wrangler/
+wrangler.toml.bak
