@@ -7,10 +7,9 @@
   </h2>
 
   <ul class="list-unstyled interests-list">
-    {%for personal-data in personal-data.summary %}
+    {% for personal-data in personal-data.summary %}
     <li>
-      <h4 class="personal-data-idiom">{{ personal-data.idiom }}</h4>
-      <span class="personal-data-desc">{{ personal-data.content }}</span>
+      {{ personal-data.idiom }} {{ personal-data.content }}
     </li>
     {% endfor %}
   </ul>

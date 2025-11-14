@@ -1,12 +1,22 @@
 ---
-layout: compress
+#Add "layout: compress" here to compress the html code
 ---
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: 'en' }}"> 
-
+<!--[if IE 8]> <html lang="{{ page.lang | default: site.lang | default: 'en' }}" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="{{ page.lang | default: site.lang | default: 'en' }}" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}"> <!--<![endif]-->
 {% include head.html %}
 
 <body>
+  <button onclick="print()" class="print-button d-print-none">
+    <i class="fas fa-file-pdf"></i>Print
+  </button>
+
+  <button onclick="generatePDF()" class="pdf-button d-print-none" id="pdfButton">
+    <i class="fas fa-file-pdf"></i>PDF
+  </button>
+
   <div class="wrapper">
     {% include sidebar.html %}
 
@@ -16,21 +26,27 @@ layout: compress
       {% unless site.data[page.lang].sidebar.education %}
         {% include education.html %}
       {% endunless %}
-      
+
       {% include experiences.html %}
-      
+
+      {% include certifications.html %}
+
       {% include projects.html %}
-      
+
+      {% include oss-contributions.html %}
+
       {% include publications.html %}
-      
+
+      {% include recommendations.html %}
+
       {% include skills.html %}
     </div>
   </div>
 
   {% include footer.html %}
 
-{% include scripts.html %}
+  {% include scripts.html %}
+  <script src="{{ site.baseurl }}/assets/js/pdf-generator.js"></script>
 </body>
 
 </html>
-

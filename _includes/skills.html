@@ -1,8 +1,5 @@
-{% assign skills = site.data[page.lang].skills %}
-{% assign otherskills = site.data[page.lang].otherskills %}
-{% if skills %}
+{% assign skills = site.data[page.lang].skills %} {% if skills %}
 <section class="skills-section section">
-
   <h2 class="section-title">
     <span class="fa-stack fa-xs">
       <i class="fas fa-circle fa-stack-2x"></i>
@@ -12,30 +9,18 @@
   </h2>
 
   <div class="skillset">
-
     {% for skill in skills.toolset %}
     <div class="item">
-
       <h3 class="level-title">{{ skill.name }}</h3>
-
+      {% assign skill_level = 'width: ' | append: skill.level %}
       <div class="level-bar">
-        <div class="level-bar-inner" data-level="{{ skill.level }}">
-        </div>
-      </div><!--//level-bar-->
-
-    </div><!--//item-->
+        <div class="level-bar-inner" style="{{skill_level}}"></div>
+      </div>
+      <!--//level-bar-->
+    </div>
+    <!--//item-->
     {% endfor %}
-
-    <ul class="list-inline">
-      {% for skill in otherskills.toolset %}
-      <li class="list-inline-item">
-        <span class="badge badge-light">{{  skill.name }}</span>
-      </li>
-      {% endfor %}
-    </ul>
-
   </div>
-
-</section><!--//skills-section-->
+</section>
+<!--//skills-section-->
 {% endif %}
-
